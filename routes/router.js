@@ -30,7 +30,7 @@ router.get("/welcomeback",async(req,res)=>{
 router.post("/welcome",verify,loginMaster.welcome)
 router.get("/productAll",productMaster.productAll)
 router.post("/product",verify,productMaster.product)
-router.get("/productAll",verify,productMaster.productAll)
+// router.get("/productAll",verify,productMaster.productAll)
 
 
 
