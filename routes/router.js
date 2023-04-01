@@ -24,7 +24,9 @@ router.post("/login", loginMaster.login)
 router.post('/reset',loginMaster.reset)
 router.post('/reset/:token',loginMaster.resetandverify)
 router.post("/contact", ContactMaster.contact)
-
+router.get("/welcomeback",async(req,res)=>{
+    res.json({
+    "Hello":"Ambuj"})})
 router.post("/welcome",verify,loginMaster.welcome)
 router.get("/productAll",productMaster.productAll)
 router.post("/product",verify,productMaster.product)
