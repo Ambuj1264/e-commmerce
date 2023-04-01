@@ -21,7 +21,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 app.use(router)
 app.get('/', (req, res) => {
-  res.send('Hey this is my API running 🥳 ambuj')
+  res.send('Hey this is my API running')
 })
 app.listen(port,()=>{
     console.log(`Listening on port ${port}`)
