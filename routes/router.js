@@ -28,9 +28,8 @@ router.post("/contact", ContactMaster.contact)
 router.post("/welcome",verify,loginMaster.welcome)
 router.get("/productAll",productMaster.productAll)
 router.post("/product",verify,productMaster.product)
-router.get("/productAll,async(req,resp)=>{
-           resp.send("hello from ecom")
-           })
+router.get("/productAll",verify,productMaster.productAll)
+
 
 
 
