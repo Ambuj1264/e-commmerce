@@ -59,7 +59,7 @@ const loginMaster = {
       from: '"pratik1264675@email.com"',
       to: userEmail.email,
       subject: "Password Reset",
-      text: `Please follow this link to reset your password: http://localhost:3000/reset/${token}`,
+      text: `Please follow this link to reset your password: https://e-commmerce-foje.vercel.app/reset/${token}`,
     };
     transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
